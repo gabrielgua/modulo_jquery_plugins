@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cadastro</h1>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <form>
+                <div class="campo-form">
+                    <label for="nomeCompleto">Nome completo</label>
+                    <input id="nomeCompleto" type="text" name="nomeCompleto" placeholder="Ex.: João da Silva">
+                </div>
+                <div class="campo-form">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="Ex.: joao@email.com">                
+                </div>
+                <div class="campo-form">
+                    <label for="telefone">Telefone</label>
+                    <input id="telefone" type="tel" name="telefone">
+                </div>
+                <div class="campo-form">
+                    <label for="cpf">CPF</label>
+                    <input id="cpf" type="text" name="cpf">
+                </div>
+
+                <div class="campo-form">
+                    <label for="endereco">Endereço</label>
+                    <input id="endereco" type="text" name="endereco" placeholder="Rua JQuery, 999 - São Paulo, SP">
+                </div>
+
+                <div class="campo-form">
+                    <label for="cep">CEP</label>
+                    <input id="cep" type="text" name="cep">
+                </div>
+                
+                <hr />
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="container">
+        <hr/>
+    </div>
+    <footer>
+        <div class="container">
+            <p>2024 &copy; - <a href="https://github.com/gabrielgua" target="_blank">gabrielgua</a></p>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>    
+    <script src="../js/jquery.mask.min.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="../js/messages_pt_BR.min.js"></script>
+    <script src="cadastro.js"></script>
+</body>
+</html>
