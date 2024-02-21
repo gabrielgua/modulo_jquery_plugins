@@ -5,27 +5,37 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .container {
     width: min(1024px, 100% - 2rem);
     margin-inline: auto;
 }
 
-header {
+header, footer {
     background-color: #192A56;
-    padding-block-start: 1rem;
     color: white;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 header > .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    padding-block: 1rem;
 }
 
 nav {
     background-color: #575FCF;
     padding-block: 1rem;
+    display: none;
 }
 
 nav ul {
@@ -50,6 +60,7 @@ nav li a {
     display: flex;
     flex-direction: column;
     gap: .25rem;
+    cursor: pointer;
 }
 
 .menu-hamburguer span {
@@ -59,3 +70,122 @@ nav li a {
     display: block;
     border-radius: .5rem;
 }
+
+.container-flex {
+    display: flex;
+    gap: 1rem;
+}
+
+#sobre-a-loja img {
+    width: 400px;
+    height: 100%;
+}
+
+section {
+    padding-block: 2rem;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+.lista-veiculos {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.lista-veiculos li {
+    list-style: none;
+}
+
+.lista-veiculos li h3 {
+    margin-block: 1rem;
+}
+
+.lista-veiculos li img {
+    width: 100%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    color: white;
+    background-color: #119759;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: .25rem;
+}
+
+.lista-veiculos li p {
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.preco {
+    margin-block: 1rem;
+    display: block;
+}
+
+.preco del {
+    color: #CCC;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+}
+
+.input-group label {
+    font-weight: bold;
+    display: block;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: .5rem;
+}
+
+.input-group textarea {
+    resize: none;
+    height: 120px;
+}
+
+footer {
+    padding-block: 1rem;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer li img {
+    height: 32px;
+    display: block;
+}
+
+footer .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mensagem-erro {
+    padding-block: .25rem;
+    font-size: smaller;
+    color: red;
+}
+
+
